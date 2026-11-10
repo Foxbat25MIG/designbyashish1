@@ -1,0 +1,51 @@
+{
+  "name_first": "ashish",
+  "name_last": "KUMAR",
+  "email": "ashish99work@gmail.com",
+  "role_line": "MULTIDISCIPLINARY DESIGNER\nBASED in Torino, Italy",
+  "timezone": "Europe/Rome",
+  "tags": [
+    "Visual Designer",
+    "Automobile Enthusiast",
+    "HMI",
+    "HUD"
+  ],
+  "hero_images": [
+    "/media/home/hero-1.jpg",
+    "/media/home/hero-2.jpg"
+  ],
+  "intro_heading": "Hi, I'm Ashish, an Indian designer that loves to experiment",
+  "intro_text": "Based in Turin, I am a **Visual Designer** specializing in automotive UX/UI and **HMI systems**.",
+  "works_heading": "Selected Works",
+  "works_years": "2024 - 2026",
+  "experiences": [
+    {
+      "years": "2020-24",
+      "company": "Pravaig Dynamics",
+      "role": "Senior Visual Designer"
+    },
+    {
+      "years": "2019-Till date",
+      "company": "DarkLabs India",
+      "role": "Freelance"
+    }
+  ],
+  "footer_image": "/media/home/footer.jpg",
+  "contact_heading": "LET'S GET IN TOUCH",
+  "socials": [
+    {
+      "label": "Instagram",
+      "url": "https://www.instagram.com/oneashiish/"
+    },
+    {
+      "label": "Behance",
+      "url": "https://www.behance.net/ashiishkumar"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/oneashiish/"
+    }
+  ],
+  "seo_title": "Ashish Kumar, HMI Designer",
+  "seo_description": "Portfolio of Ashish Kumar, a multidisciplinary designer in Torino, Italy, specializing in automotive UX/UI, HMI and HUD systems."
+}

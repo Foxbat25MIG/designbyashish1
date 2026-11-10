@@ -1,0 +1,3 @@
+# Any /project-name opens the project template (works for new projects added in the CMS too).
+# Real files and folders (like /media or /admin) always win over this rule.
+/:slug    /project.html    200

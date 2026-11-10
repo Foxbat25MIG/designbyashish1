@@ -1,0 +1,122 @@
+{
+  "projects": [
+    {
+      "slug": "mahindra",
+      "title": "Mahindra",
+      "card_label": "Mahindra",
+      "year": "2026",
+      "cover": "/media/mahindra/cover.jpg",
+      "logo": "/media/mahindra/logo.png",
+      "overview": "Working with Mahindra Advanced Design Europe (MADE) during my time at IAAD was a defining experience. I deeply admire their design philosophy and used their professional guidance to recreate the Mahindra Classic Reborn program. This project is a reflection of that collaboration, a tribute to Mahindra’s iconic DNA, evolved through rigorous feedback and creative exploration.",
+      "top_images": ["/media/mahindra/image-1.jpg", "/media/mahindra/image-2.jpg"],
+      "about_text": "The objective of this UI Project was to create a durable, context-aware interface that empowers drivers during extreme off-road conditions while remaining intuitive for everyday stationary use. The visual language is defined by a light UI base optimized for high-visibility outdoor and night use, supported by strong iconography and minimal color usage. Key design elements include:\n\n- **Adaptive Context:** A UI that shifts based on driving conditions to provide the most relevant data.\n- **Visual Precision:** High-contrast typography and red accents to highlight active states and critical alerts.\n- **Experiential Integration:** The use of photographic elements to create an immersive feel for various experiential driving modes.",
+      "intro_title": "Meet PAX",
+      "intro_text": "Hello, I am PAX, your AI assistant. Providing clear guidance, timely information, and seamless control so you can stay focused on the road.\n\nJust ask, and I'll adapt to help you drive safely, comfortably, and confidently.",
+      "media": [
+        { "type": "video", "src": "/media/mahindra/opening-sequence.mp4", "caption": "Opening Sequence" },
+        { "type": "video", "src": "/media/mahindra/comfort-mode.mp4", "caption": "Comfort Mode" },
+        { "type": "video", "src": "/media/mahindra/sport-mode.mp4", "caption": "Sport Mode" },
+        { "type": "video", "src": "/media/mahindra/off-road-mode.mp4", "caption": "Off-Road Mode" },
+        { "type": "video", "src": "/media/mahindra/autopilot-mode.mp4", "caption": "Autopilot Mode" },
+        { "type": "video", "src": "/media/mahindra/stealth-mode.mp4", "caption": "Stealth Mode" },
+        { "type": "video", "src": "/media/mahindra/center-console.mp4", "caption": "Center Console" }
+      ]
+    },
+    {
+      "slug": "hud",
+      "title": "Military HUD",
+      "card_label": "Military HUD",
+      "year": "2026",
+      "cover": "/media/hud/cover.jpg",
+      "logo": "/media/hud/logo.png",
+      "overview": "Drawing from professional expertise in Automotive HUD systems, this project explores the technical frontiers of military-grade visualization. Focused on high-stakes environments, the suite currently features specialized interfaces for Tanks and Drones, with a Helmet HUD integration in development. This initiative represents an ongoing commitment to refining situational awareness through rigorous experimentation and tactical design.",
+      "top_images": ["/media/hud/image-1.jpg"],
+      "about_text": "",
+      "intro_title": "",
+      "intro_text": "",
+      "media": [
+        { "type": "video", "src": "/media/hud/reconnaissance-drone.mp4", "caption": "Reconnaissance Drone" },
+        { "type": "video", "src": "/media/hud/recon-drone.mp4", "caption": "Recon Drone" },
+        { "type": "video", "src": "/media/hud/hud-elements.mp4", "caption": "HUD Elements" },
+        { "type": "video", "src": "/media/hud/reconnaissance-drone-2.mp4", "caption": "Reconnaissance Drone" },
+        { "type": "video", "src": "/media/hud/m1-abrams-tank.mp4", "caption": "M1 Abrams Tank" },
+        { "type": "video", "src": "/media/hud/tactical-drone.mp4", "caption": "Tactical Drone" }
+      ]
+    },
+    {
+      "slug": "honda",
+      "title": "Honda",
+      "card_label": "Honda",
+      "year": "2026",
+      "cover": "/media/honda/cover.jpg",
+      "logo": "/media/honda/logo.png",
+      "overview": "Design a race-focused digital instrument cluster UI for Honda Racing, created specifically for the Honda CBR1000RR. The UI translates final sketches, layouts, and motion references into a high-performance, production-ready concept optimised for track riding.",
+      "top_images": ["/media/honda/image-1.jpg", "/media/honda/image-2.jpg"],
+      "about_text": "Create a clear, fast, and distraction-free UI that delivers critical performance data at a glance while reinforcing Honda Racing’s values of precision, control, and engineering excellence.\n\n**Visual Language**\n\n- Function-first\n- No decorative elements\n- Strong visual hierarchy\n- Modular and grid-based layout states",
+      "intro_title": "",
+      "intro_text": "",
+      "media": [
+        { "type": "video", "src": "/media/honda/opening-sequence.mp4", "caption": "Opening Sequence" },
+        { "type": "video", "src": "/media/honda/track-mode.mp4", "caption": "Track Mode" },
+        { "type": "video", "src": "/media/honda/map-mode.mp4", "caption": "Map Mode" }
+      ]
+    },
+    {
+      "slug": "nio",
+      "title": "Nio",
+      "card_label": "Nio",
+      "year": "2026",
+      "cover": "/media/nio/cover.jpg",
+      "logo": "/media/nio/logo.png",
+      "overview": "Design a modular, intelligent center console UI for NIO vehicles, focused on clarity, comfort, and seamless interaction across driving, navigation, media, and lifestyle use cases.",
+      "top_images": ["/media/nio/image-1.jpg"],
+      "about_text": "Create a calm, intuitive, and visually balanced interface that delivers essential vehicle and lifestyle information with minimal distraction, while reflecting NIO’s premium, tech-forward, human-centric design philosophy.",
+      "intro_title": "",
+      "intro_text": "",
+      "media": [
+        { "type": "video", "src": "/media/nio/video-1.mp4", "caption": "" },
+        { "type": "video", "src": "/media/nio/video-2.mp4", "caption": "" },
+        { "type": "video", "src": "/media/nio/video-3.mp4", "caption": "" }
+      ]
+    },
+    {
+      "slug": "steam",
+      "title": "Steam",
+      "card_label": "Steam",
+      "year": "2026",
+      "cover": "/media/steam/cover.jpg",
+      "logo": "/media/steam/logo.png",
+      "overview": "Steam is the world's largest gaming platform, but its desktop dashboard feels dated, cluttered, and overwhelming for modern users. The redesign aims to deliver a clean, intelligent, system-level dashboard with improved clarity, discoverability, and personalization.",
+      "top_images": ["/media/steam/image-1.jpg"],
+      "about_text": "Steam has two user types: the heavy gamer who seeks stats, and the casual gamer who prioritizes immediate access. The project aims to have a uniform interface to satisfy both users.",
+      "intro_title": "",
+      "intro_text": "",
+      "media": [
+        { "type": "image", "src": "/media/steam/screen-1.png", "caption": "" },
+        { "type": "image", "src": "/media/steam/screen-2.png", "caption": "" },
+        { "type": "image", "src": "/media/steam/screen-3.png", "caption": "" },
+        { "type": "image", "src": "/media/steam/screen-4.png", "caption": "" },
+        { "type": "image", "src": "/media/steam/screen-5.png", "caption": "" },
+        { "type": "image", "src": "/media/steam/screen-6.png", "caption": "" }
+      ]
+    },
+    {
+      "slug": "instrument",
+      "title": "Clusters",
+      "card_label": "Clusters",
+      "year": "2026",
+      "cover": "/media/instrument/cover.jpg",
+      "logo": "/media/instrument/logo.png",
+      "overview": "This project focuses on the evolution of Automotive Instrument Clusters, prioritizing driver ergonomics and high-fidelity data visualization. By synthesizing aesthetic refinement with technical precision, the work explores the transition from traditional analog gauges to integrated digital cockpits.",
+      "top_images": ["/media/instrument/image-1.jpg"],
+      "about_text": "",
+      "intro_title": "",
+      "intro_text": "",
+      "media": [
+        { "type": "video", "src": "/media/instrument/panoramic-screen.mp4", "caption": "Panoramic Screen" },
+        { "type": "video", "src": "/media/instrument/retro-cluster.mp4", "caption": "Retro Cluster" },
+        { "type": "video", "src": "/media/instrument/ev-scooter-cluster.mp4", "caption": "EV Scooter Cluster" }
+      ]
+    }
+  ]
+}

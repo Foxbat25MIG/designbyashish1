@@ -1,0 +1,116 @@
+/* Homepage only. Proportions measured from the live Framer site (1200px design width). */
+body.home{
+  --pad:4.4vw;          /* page side margin */
+  --gap:2vw;            /* gap between image tiles */
+  --small:clamp(13px,1.25vw,26px);   /* body / label text */
+  --h2:clamp(26px,3.5vw,88px);       /* section titles */
+  font-size:var(--small);
+}
+
+/* top bar: email | role (starts at 2nd column) | clock */
+.home .topbar{grid-template-columns:repeat(3,1fr);column-gap:var(--gap);padding:var(--pad);font-size:var(--small);line-height:1.15}
+.home .role{justify-self:start;gap:.7em;width:auto}
+.home .clock{color:var(--muted)}
+
+/* hero: name sits on the bottom edge, a sliver of the images peeks under it */
+.home .hero{height:calc(100svh - 3vw);min-height:480px}
+.home .bigname{padding:0 var(--pad);font-size:15.3vw;line-height:1;letter-spacing:-.06em;bottom:2vw}
+.home #nameWrap{display:inline-block}
+
+.home .strip{gap:var(--gap)}
+.home .strip .media{aspect-ratio:16/10}
+
+/* intro */
+.home .intro{padding:8vw var(--pad) 20vw;align-items:start;column-gap:var(--gap)}
+.home .intro h2{font-size:clamp(24px,3.1vw,76px);line-height:1.2;letter-spacing:-.025em;max-width:13em}
+.home .intro p{font-size:var(--small);max-width:21em;line-height:1.3}
+
+/* selected works */
+.home .sec-head{padding:0 var(--pad) 1.6vw}
+.home .sec-head h2,.home .exp h2{font-size:var(--h2);letter-spacing:-.03em;line-height:1.1}
+.home .sec-head p{font-size:calc(var(--small)*.8);margin-top:.5em}
+.home .grid{gap:3.4vw var(--gap)}
+.home .card .media{aspect-ratio:16/9}
+.home .card .meta{font-size:var(--small);margin-top:.6em}
+
+/* experiences */
+.home .exp{padding:9vw var(--pad) 3vw;column-gap:var(--gap)}
+.home .exp-cols{font-size:var(--small);column-gap:var(--gap)}
+.home .exp-cols small{font-size:calc(var(--small)*.8);margin-bottom:1.1em}
+.home .exp-cols p{line-height:1.2}
+
+/* footer: wide artwork, then contact row on the same 3 columns */
+.home .foot{padding:0 var(--pad) var(--pad)}
+.home .foot .art{max-width:none;margin:0;aspect-ratio:1600/529;background:none}
+.home .foot .art>img{object-fit:contain}
+.home .contact{font-size:var(--small);column-gap:var(--gap);padding-top:1vw}
+.home .contact>span{text-transform:uppercase}
+.home .contact .pills{justify-self:start;gap:.5em}
+.home .pill{font-size:calc(var(--small)*.85);border-radius:.4em;padding:.45em .9em}
+
+@media (max-width:760px){
+  body.home{--pad:5vw;--gap:3vw;--small:14px;--h2:8.5vw}
+  .home .topbar{grid-template-columns:1fr auto}
+  .home .role{grid-column:1/3;grid-row:2}
+  .home .hero{height:calc(100svh - 12vw)}
+  .home .intro{padding:12vw var(--pad) 28vw;row-gap:5vw}
+  .home .intro h2{font-size:8vw}
+  .home .grid{gap:7vw var(--gap)}
+  .home .exp{padding-top:22vw;row-gap:6vw}
+  .home .contact{row-gap:4vw}
+}
+
+/* ================= Entrance animations (Enerblock-style) ================= */
+:root{--ease-out:cubic-bezier(.16,1,.3,1)}
+
+/* hide things until their moment (only when JS is on and motion is allowed) */
+html.js body.home #nameWrap:not(.is-ready):not(.is-done),
+html.js body.home #introHeading:not(.is-ready):not(.is-done),
+html.js body.home #worksHeading:not(.is-ready):not(.is-done),
+html.js body.home .exp h2:not(.is-ready):not(.is-done),
+html.js body.home #email:not(.is-ready):not(.is-done),
+html.js body.home #roleText:not(.is-ready):not(.is-done),
+html.js body.home #worksYears:not(.is-ready):not(.is-done),
+html.js body.home .meta span:not(.is-ready):not(.is-done),
+html.js body.home .exp-cols > div > *:not(.is-ready):not(.is-done),
+html.js body.home .contact > span:not(.is-ready):not(.is-done){visibility:hidden}
+
+/* headings: the block (same colour as the text) */
+.ln{display:block;position:relative;width:max-content;max-width:100%}
+.ln.ln-inline{display:inline-block}
+.ln-b{position:absolute;inset:0;background:currentColor;pointer-events:none;clip-path:inset(0 100% 0 0)}
+
+/* labels: typing cursor */
+.cur{display:inline-block;width:.55em;height:.95em;margin-left:1px;background:currentColor;vertical-align:-.12em}
+
+/* images: clipped from the corner, scrubbed by scroll */
+html.js body.home [data-img]{clip-path:inset(0 78% 70% 0)}
+.home .strip,.home .card,.home .foot{position:relative}
+.dim{position:absolute;z-index:3;font:400 calc(var(--small)*.62)/1 var(--font);letter-spacing:.02em;color:var(--muted);white-space:nowrap;pointer-events:none;opacity:0;transition:opacity .25s}
+
+/* paragraphs / clock / buttons: plain fade */
+html.js body.home #introText,html.js body.home #clock,html.js body.home .contact time{opacity:0;transition:opacity .9s ease .5s}
+html.js body.home #introText.is-in,html.js body.home #clock.is-in,html.js body.home .contact time.is-in{opacity:1}
+html.js body.home .contact .pills a{opacity:0;transform:translateY(10px);transition:opacity .8s ease,transform .9s var(--ease-out),background .2s,color .2s}
+html.js body.home .contact .pills a.is-in{opacity:1;transform:none}
+
+/* ---- Enerblock-style heading block wipe + typed labels ---- */
+.is-block{position:relative}
+html.js body.home .is-block .w{overflow:visible;padding:0;margin:0}
+html.js body.home .is-block .w-in{transform:none;opacity:0;transition:none}
+html.js body.home .is-block.is-in .w-in{opacity:1;transition:opacity 0s linear var(--sw,0s)}
+.blk{position:absolute;background:currentColor;transform:scaleX(0);transform-origin:left;pointer-events:none}
+.is-block.is-in .blk{animation:blkIn var(--bi,.38s) cubic-bezier(.7,0,.3,1) var(--bd,0s) forwards,blkOut var(--bo,.6s) cubic-bezier(.55,0,.2,1) calc(var(--bd,0s) + var(--bi,.38s)) forwards}
+@keyframes blkIn{from{transform:scaleX(0);transform-origin:left}to{transform:scaleX(1);transform-origin:left}}
+@keyframes blkOut{from{transform:scaleX(1);transform-origin:right}to{transform:scaleX(0);transform-origin:right}}
+html.js body.home [data-scr]:not(.is-in){visibility:hidden}
+.cur{display:inline-block;width:.55em;height:.85em;margin-left:1px;background:currentColor;vertical-align:-.08em}
+
+/* name: one big block wipe */
+.home #nameWrap{position:relative}
+.home .bigname.is-block{position:absolute}
+
+/* image strip: tiles grow with the scroll and show their size */
+.home .strip .cell{position:relative;aspect-ratio:16/10}
+.home .strip .cell .media{position:absolute;left:0;top:0;aspect-ratio:auto}
+.rd{position:absolute;font-size:calc(var(--small)*.62);color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums;pointer-events:none}
